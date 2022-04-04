@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+           <title>belajar membuat table</title>
+            <style type="text/css">
+             
+ body {background-color:linen;
+             background-attachment:fixed;
+             background-size:cover;
+             }
+ h1   {font-size:80px;color: blue;}
+p{ align:centert;font-size:40px;}
+ul{font-size:40px;}
+code{font-size:40px;font-size:center}
+td{font-size:40px; text-align:center;}
+table{align:center;}
+</style>
+</head>
+
+
+<body>
+<!--NAVIGASI MENU-->
+
+<div>
+<div style="width:100%; text-align:center; font-size:60px;color:#A00">
+
+
+<b>Z@¥¥!D~PRODUCTION</b>
+</div>
+<div style="background: green; width:100%;height:210px;color:#fff;text-align:center;font-size:30px">
+<br style="font-size:70px;">
+<br>
+<div style="width:100%;text-align:center;font-size:40px"> 
+<a href="home.html" style="color:#850">HOME</a>
+<a href="tentang .html">TENTANG KAMI</a>|
+<a href="layanan.html">lAYANAN</a>|
+<a href="kontak.html">KONTAK</a>
+</div>
+</div>
+  <!--AKHIR NAVIGASI MENU-->
+<img src="97-971005_business-png-transparent-free-images-people-working-on.png" width="100%">
+
+<!--KONTEN-->
+
+<div style="text-align:center">
+<p>
+<b style="font-size:40px"> Software Development
+</b> 
+<br >
+Aplikasi Desktop, Aplikasi Andriod, Website, Web APP
+
+</p>
+<p style=" text-align:center;">
+<b style="font-size:40px";>Mengapa Memilih kami?</b>
+<br><br>
+<table border="0"width:"150%"; align="center";>
+<tr>
+<td><img src ="pelayanan.jpeg" style="width:150px; height:150px;"/></td>
+<td><img src="kualitas_terjamin.jpeg" style="width:150px; height:150px;/"></td>
+</tr>
+<tr>
+<td  >terima order 24j</td>
+<td>kualitas terjamin</td>
+</tr>
+<tr>
+<td colspan="10"></td>
+</tr>
+<tr>
+<td><img src="bergaransi.jpeg" style="width:150px; height:150px";/></td>
+<td><img src="harga_murah.png" style="width:150px; height:150px";/></td>
+</tr>
+<tr>
+<td>bergaransi</td>
+<td>harga terjangkau<td/>
+</tr>
+</table>
+</p>
+</div>
+
+<!--AKHIR KONTEN-->
+<div style="background: black; width:100%;height:160px;color:#fff;text-align:center;font-size:30px">
+<br style="font-size:70px;">
+copyright™ 2022 Z@y¥id<-------->http:///www.santritauhid.com
+</div>
+
+
+
+<hr>
+<h1>tag untuk membuat tabel html</h1>
+
+<p>Ada beberapa tag yang harus diingat untuk membuat tabel di HTML:
+<ul>
+
+<li>Tag <b><code>&lt;table&gt;</code></b> untuk membungkus tabelnya
+<li>Tag <b><code>&lt;thead&gt;</code></b>untuk membungkus bagian kepala tabel
+<li>Tag <b><code>&lt;tbody&gt;</code></b> untuk membungkus bagian body dari tabel
+<li>Tag <b><code>&lt;tr&gt;</code></b> (tabel row) untuk membuat baris
+<li>Tag<b><code> &lt;td&gt;</code></b> (table data) untuk membuat sel
+<li>Tag <b><code>&lt;th&gt;</code></b>(table head) untuk membuat judul pada header
+</ul>
+</p>
+
+<p>
+Tag yang paling penting untuk diingat adalah tag<b> <code>&lt;table&gt; &lt;tr&gt; dan &lt;td&gt;.</code></b> Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.
+</p>
+<p>
+Mari kita lihat contohnya:
+<pre><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+ &lt;head&gt;
+      &lt;title&gt;
+Belajar Membuat Tabel HTML&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Baris 1 kolom 1&lt;/td&gt; 
+          &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+           &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+     &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</code>
+</pre>
+</p>
+
+<p>Hasilnya:</p>
+   <img src="tabel-tanpa-garis.png" style="width:100%">
+
+
+<p>Tabel tanpa garis
+Kok tidak ada garisnya?</p>
+
+<p>Iya, karena kita tidak menambahkan atribut <b>border </b> pada tabelnya.</p>
+<p>
+Agar Tabelnya memiliki garis, silahkan tambahkan atribut <b>border="1" </b>di dalam tag <b><code>&lt;table&gt. 
+</code></b>
+</p>
+<p>Sehingga akan menjadi seperti ini:
+
+<pre><code>
+  
+  &lt;table boder="1"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+            &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+            &lt;td&gt;baris 2 kolom 2</td>
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+</code>
+</pre></p>
+
+<p>
+Nilai "1" pada atribut <b>border</b> adalah ukuran garisnya. Semakin besar ukurannya, maka akan semakin besar pula ukuran garisnya.</p>
+
+<p>Nilai "1" adalah ukuran garis yang palng kecil.</p>
+
+<p>Hasilnya akan sepert ini:</p>
+
+<img src="tabel-garis.png" style="width:100%">
+
+
+<h1>Mengatur Jarak Sel dengan Cellpadding</h1>
+
+<p>Atribut <b>cellpadding</b> adalah atribut untuk mengatur jarak teks dengan garis di dalam sel.</p>
+
+<p>Atribut ini dapat kita berikan kepada tag <b>&lt;table&gt;.</b>
+</p>
+
+<p>Contoh:</p>
+<pre><code>
+&lt;table border="1" cellpadding="10"&gt;
+  &lt;tr&gt;
+         &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+         &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+          &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+          &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+   &lt;/tr&gt;
+ &lt;/table&gt;
+
+</code>
+</pre>
+
+<p>Nilai "10" pada atribut<b> cellpadding</b> adalah ukuran jarak antara teks sel dengan garis.
+
+<p>Maka hasilnya:</p>
+<img src="cellpadding.png" style="width:100%">
+
+<h1>Menambahkan Warna pada Sel dan Baris</h1>
+<p>
+Untuk menambahkan warna pada sel dan baris, kita bisa menambahkan atribut<b> bgcolor</b> di dalam tag<b> &lt;td&gt;</b> (untuk sel) atau <b>&lt;tr&gt;</b>(untuk baris).</p>
+
+<p>Contoh:</p>
+<code>
+<pre>
+    &lt;table border="1" cellpadding="10"&gt;
+        &lt;tr&gt;
+            &lt;td bgcolor="yellow"&gt; 
+            Baris 1 kolom 1&lt;/td&gt;
+            &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor="#00ff80"&gt;
+            &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+            <td>baris 2 kolom 2</td>
+        &lt;/tr&gt;
+    &lt;/table&gt;
+</code>
+</pre>
+<p>
+Nilai atribut <b>bgcolor</b> bisa kita isi dengan kode warna dalam heksadesimal atau nama warna dalam bahasa inggris.</p>
+
+<p>Maka hasilnya akan seperti ini:</p>
+<img src="warna.png"style="width:100%">
+
+<p>
+Tabel dengan warna</p>
+<h1>Menggabungkan Sel Tabel</h1>
+<p>Atribut yang digunakan untuk menggabungkan sel tabel adalah <b>rowspan</b> dan <b>colspan</b>:
+</p>
+<p>
+
+<b>rowspan</b> untuk menggabungkan baris;<br>
+<b>colspan</b> untuk menggabungkan kolom.
+
+Atribut ini bisa kita berikan kepada tag <b>&lt;td&gt;</b> atau<b>&lt;th&gt;</b>.</p>
+<img src="rowspan-colspan.png" style="width:100%">
+
+
+
+<p>Mari kita lihat contohnya:</p>
+<code>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Belajar Membuat Tabel HTML
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+    &lt;th rowspan="2" bgcolor="yellow"&gt;     
+       Bulan&lt;/th&gt;
+       &lt;th colspan="2" bgcolor="#00ff80"&gt;
+       Hasil Panen&lt;/th&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+            &lt;th&gt;Padi&lt;/th&gt;
+            &lt;th&gt;Kacang&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Januari&lt;/td&gt;
+            &lt;td&gt;500 Kg&lt;/td&gt;
+            &lt;td&gt;231 Kg&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Februari&lt;/td&gt;
+            &lt;td&gt;342 Kg&lt;/td&gt;
+            &lt;td&gt;423 Kg&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Maret&lt;/td&gt;
+            &lt;td&gt;432 Kg&lt;/td&gt;
+            &lt;td&gt;124 Kg&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;April&lt;/td&gt;
+            &lt;td&gt;453 Kg&lt;/td&gt;
+            &lt;td&gt;523 Kg&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</code>
+</pre>
+
+<p>Hasilnya:</p>
+
+<img src="tabel-rowspan-colspan.png" style="width:100%">
+
+<h1>Menyisipkan Elemen yang Lain ke dalam Sel</h1>
+
+<p>Di dalam sel<b>&lt;td&gt;</b> dan <b>&lt;th&gt;</b>, kita bisa menyisipkan elemen HTML yang lain, seperti gambar, link, video, list, dsb.
+</p>
+<p>Contoh:</p>
+<code>
+<pre>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Belajar Membuat Tabel HTML
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+        &lt;th colspan="3" bgcolor="yellow"
+&gt;Produk Unggulan&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="4"&gt;
+                &lt;img src=
+"https://www.zayyid.com/img/bibit.png"
+ width="200" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Nama&lt;/td&gt;
+            &lt;td&gt;Benih Kode&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Harga&lt;/td&gt;
+            &lt;td&gt;Rp 192.000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Fitur&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&g
+ &lt;li&gt;Dilengkapi Dokumentasi&lt;/li&gt;
+ &lt;li&gt;Ukuran: 31MB&lt;/li&gt;
+ &lt;li&gt;Masa Tanam: 6 Bulan&lt;/li&gt;
+           &lt;li&gt;Lisensi: MIT&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<p>Hasilnya:</p>
+<img src="elemen-dalam-tabel.png" style="width:100%">
+
+<p>Apa Selanjutnya?<br>
+Menurut saya, bagian tersulit saat membuat tabel di HTML adalah <b>saat menggabungkan sel</b>. Karena kita harus teliti, berapa ukuran sel yang akan digabungkan dengan rowspan dan colspan.
+</p>
+<p><b>Saran saya:</b></p>
+
+
+<p>Sering-sering latihan dengan contoh kasus tertentu. Coba lihat tabel-tabel yang ada di sekeliling kita, lalu coba buat tabel tersebut dalam HTML.</p>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

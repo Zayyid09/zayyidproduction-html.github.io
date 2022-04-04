@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+             <title>belajar menggunakan tag form</title>
+    <style type="text/css">
+           body{background-color:silver;}
+           h1{color:red;font-size:60;}
+           b {color:blue;}
+           p {font-size:;text-align:left;}
+           img{}
+           
+</style>
+
+<head/>
+
+<body>
+<h1>Cara Membuat Form di HTML</h1>
+
+Form di HTML dapat kita buat dengan tag <b>&lt;form&gt; </b>
+
+<p>Tag ini memiliki beberapa atribut yang harus diberikan, seperti:<p>
+
+<p><b>action </b>untuk menentukan aksi yang akan dilakukan saat data dikirim;<br>
+<b>method</b> metode pengiriman data.</p>
+
+<p>Contoh:</p>
+<p>
+<b>&lt;form action="prosess.php" method="GET"&gt; &lt;!-- form field di sini --&gt; &lt;/form&gt;</p>
+</b>
+<p>Untuk atribut action, kita dapat mengisinya dengan alaman URL dari endpoint yang akan memproses form.</p>
+
+<p>Secara sederhana,—pada contoh di atas— kita akan menyuruh file prosess.php untuk memproses data form
+</p>
+
+<p>Ini nanti akan kita pelajari pada PHP.</p>
+
+<p>Kode HTML di atas, tidak akan menghasilkan apa-apa.
+
+Karena kita belum membuat field-nya.</p>
+
+<h1>Apa itu Field?</h1>
+
+<b>Field</b> adalah ruas yang dapat diisi dengan data.
+
+<p>Contoh field:</p>
+<p>
+<b>&lt;input type="text" name="info" /&gt;</p></b>
+
+<p>Field memiliki beberapa atribut yang harus diberikan:
+<ol>
+<li><b>type </b>merupakan type dari field.
+<li><b>name</b> merupakan nama dari field yang akan menjadi kunci dan variabel di dalam program.
+</ol>
+</p>
+<h1>Latihan: Membuat Form Login</h1>
+
+<p>Sebagai latihan, mari kita buat form login.
+</p>
+<p>Pada form login, terdapat beberapa field dan elemen:
+<ol>
+<li><b>Field</b> untuk input username atau email;
+<li><b>Field</b> untuk input password;
+<li><b>Checkbok </b>untuk remember me;
+<li><b>Tombol</b> untuk login.
+</ol>
+</p>
+
+<p>Berikut ini kodenya:</p>
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+
+ &lt;html&gt;
+ &lt;head&gt;
+            &lt;title&gt;Form Login&lt;/title&gt;
+ &lt;/head&gt; 
+
+&lt;body&gt;
+
+        &lt;form action="login.php" method="POST"&gt;
+ &lt;fieldset&gt;
+        &lt;legend&gt;Login&lt;/legend&gt;
+&lt;p&gt;
+       &lt;label&gt;Username:&lt;/label&gt;
+
+&lt;input type="text" name="username" placeholder="username..." /&gt; &lt;/p&gt; gak;
+ &lt;p&gt; 
+        &lt;label&gt;Password:&lt;/label&gt;
+&lt;input type="password" name="password" placeholder="password..." /&gt; &lt;/p&gt;
+&lt;p&gt;
+        &lt;label&gt;
+&lt;input type="checkbox" name="remember"       value="remember" /&gt;Remember me&lt;/label&gt; &lt;/p&gt; 
+&lt;p&gt;
+&lt;input type="submit" name="submit" value="Login" /&gt;
+&lt;/p&gt;
+     &lt;/fieldset&gt;
+      &lt;/form&gt;
+         &lt;/body&gt;
+ &lt;/html&gt;
+</pre>
+</code>
+
+Hasilnya:
+
+<img src="form-login.png">
+
+<p>Sekarang perhatikan!</p>
+
+<p>Pada kode di atas, kita membuat empat buah filed:
+
+<ol>
+<li>input<b> username</b> dengan tipe<b> text</b>;<li>input <b>password</b> dengan tipe <b>password</b>;<li>input<b> remember</b> dengan tipe <b>checkbox</b>;<li>input <b>submit</b> dengan tipe <b>submit</b>;
+
+</ol>
+</p>
+<p>Lalu ketiga filed ini dibungkus ke dalam tag<b> &lt;fieldset&gt;</b>
+
+Nanti tag <b>&lt;fieldset&gt; </b>ini akan membuat sebuah garis.</p>
+
+<p>Di dalam tag <b>&lt;fieldset&gt;</b>, kita membuat tag<b> &lt;legend&gt;</b> untuk memberikan teks pada fieldset.</p>
+
+<p>Lalu, perhatikan juga atirbut yang digunakan pada setiap field.</p>
+<p>
+<ul>
+
+<li>Atribut <b>placeholder </b>untuk menampilkan teks sementara (placeholder);
+<li>Atribut <b>value </b>untuk membreikan nilai default pada field
+</ul>.</p>
+
+<p>Setiap field kita bungkus dalam tag <b>&lt;p&gt;</b>gar terlihat rapi dan juga kita berikan sebuah label dengan tag <b>&lt;label&gt;.</b></p>
+
+<h1>Latihan: Membuat Form Contact</h1>
+
+Latihan Selanjutnya, kita akan membuat form contact. Form ini berfungsi untuk menghubungi atau kontak admin.
+
+Silahakan ikuti kode berikut:
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+
+ &lt;html&gt;
+&lt;head&gt;
+       &lt;title&gt;Contact Us&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;form action="contact.php" method="POST"&gt; &lt;fieldset&gt;
+      &lt;legend&gt;Contact&lt;/legend&gt;
+ &lt;p&gt;
+      &lt;label&gtName:&lt;/label&lt;
+ &lt;input type="text" name="name" placeholder="your name..." /&gt; &lt;/p&gt;
+ &lt;p&gt;
+     &lt;label&gt;Subject:&lt;/label&gt;
+ &lt;input type="text" name="subject" placeholder="subject..." /&gt; &lt;/p&gt;
+ &lt;p&gt;
+      &lt;label&gt;Email:&lt;/label&gt;
+ &lt;input type="email" name="email" placeholder="your email..." /&gt; &lt;/p&gt;
+ &lt;p&gt;
+ &lt;input type="submit" name="submit" value="Send" /&gt; &lt;/p&gt;
+
+&lt;/fieldset&gt;
+         &lt;/form&gt;
+              &lt;/body&gt;
+      &lt;/html&gt;
+</pre>
+</code>
+
+<p>Hasilnya:</p>
+<img src="form-contact.png">
+
+<p>Pada contoh di atas, kita memberikan type="email" untuk field email, agar filed ini harus diisi dengan email saja.</p>
+
+<p>Coba saja isi dengan yang lain, lalu klik <b>Send…
+</b>maka akan muncul pesan peringatan.
+
+<img src="form-contact-error.png">
+
+<h1>Latihan: Membuat Form Register</h1>
+
+<p>Semakin banyak latihan, semakin bagus.<p>
+
+<p>Berikutnya kita akan coba membuat <b>form registrasi.</b></p>
+
+<p>Form ini berisi field untuk:</p>
+<ol>
+<li>Input nama lengkap;
+<li>Input username;
+<li>Input email;
+<li>Input password;
+<li>Input jenis kelamin;
+<li>Input Agama;
+<li>Input Biografi.
+<li>dsb.
+</ol>
+<p>Mari kita buat…</p>
+
+<!DOCTYPE html>
+
+ <html> 
+ <head> 
+
+            <title>Registrasi</title> 
+</head> 
+
+<body>
+ <form action="contact.php" method="POST"> 
+ 
+     <fieldset>
+
+<legend>Registrasi</legend>
+ <p> 
+     <label>Nama:</label>
+ <input type="text" name="nama" placeholder="Nama lengkap..." /> </p> 
+<p>
+      <label>Username:</label>
+ <input type="text" name="username" placeholder="Username..." /> </p>
+ <p>
+      <label>Email:</label> 
+<input type="email" name="email" placeholder="Your email..." /> </p> 
+<p> 
+      <label>Password:</label>
+ <input type="password" name="password" placeholder="Passowrd..." /> </p>
+ <p> 
+      <label>Jenis kelamin:</label>
+      
+      <label>
+<input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+      <label>
+<input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+ </p>
+ <p>
+      <label>Agama:</label>
+                 <select name="agama"> 
+<option value="islam">Islam</option>
+<option value="kristen">Kristen</option>
+ <option value="hindu">Hindu</option>
+ <option value="budha">Budha</option>
+                 </select>
+ </p>
+ <p> 
+                <label>Biografi:</label>
+ <textarea name="biografi"></textarea> 
+</p> 
+<p> 
+<input type="submit" name="submit" value="Daftar" 
+ </p>
+         </fieldset> 
+             </form>
+   </body>
+ </html> 
+
+Hasilnya:
+
+<img src="form-register.png">
+
+<p>Apa saja field baru yang ada di form tersebut?</p>
+<ol>
+<li>Field<b> &lt;radio&gt;</b>;
+<li>Field <b>&lt;select&gt;&lt;option&gt;</b>;
+<li>Field <b>&lt;textarea&gt;.</b>
+
+<p>Apa bedanya <b>radio</b> dengan<b> checkbox</b>?
+</p>
+
+<p>Jika kita ingin agar pengunjung memilih salah satu, maka kita gunakan<b> radio.</b></p>
+
+<p>Tapi kalau kita ingin pengunjung memilih lebih dari satu, maka kita gunakan <b>checkbox.</b></p>
+
+<p>Lalu untuk<b> &lt;select&gt;&lt;/option&gt;</b>, sifatnya sama seperti <b>radio</b>. Cuma dia bentuknya berbeda.
+</p>
+
+<p>Lalu untuk menginputkan teks yang panjang, kita gunakan tag <b>&lt;textarea&gt;.</b><p>
+
+<h1>Latihan: Membuat Form Tingkat Lanjut</h1>
+
+Field-field di atas merupakan jenis field yang sering digunakan dalam pembuatan form.
+
+Masih ada jenis field lagi yang belum kita coba, seperti meter, color, url, number, date, datetime, dsb.
+
+Mari kita coba beberapa:
+
+<!DOCTYPE html> 
+<html>
+ <head>
+ <title>Form HTML</title>
+ </head> 
+<body> 
+<form action="contact.php" method="POST"> 
+     <fieldset>
+ <legend>Form</legend>
+ <p> 
+        <label>Alamat Web:</label>
+ <input type="url" name="name" placeholder="Masukan URL Web..." />
+ </p>
+ <p> <label>Tanggal Lahir:</label>
+ <input type="date" name="tanggal" />
+ </p> 
+<p>
+      <label>Umur:</label> 
+<input type="number" min="10" max="90" name="umur" /> </p>
+ <p>
+ <input type="submit" name="submit" value="Send" />
+ </p>
+        </fieldset>
+            </form>
+       </body>
+ </html> 
+
+<p>Hasilnya:</p>
+
+<img src="misc.png">
+
+<p>Apabila di browser anda tidak tampil kalender seperti di atas, coba gunakan browser versi terbaru.</p>
+
+<p>Apa Selanjutnya?</p>
+
+<p>Apa yang kita pelajari pada tutorial ini adalah tag dan field dasar—dan sering digunakan—dalam pembuatan form.
+
+Masih terdapat banyak tipe field lagi yang belum kita coba. Seperti: meter, color, time, dsb.</p>
+
+Karena itu, silahkan berlatih terus…
+
+</body>
+</html>
+
+
+
